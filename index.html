@@ -41,15 +41,11 @@
             color: #94a3b8;
             border-radius: 1rem;
             overflow: hidden;
+            transition: transform 0.3s ease;
         }
-        .cat-photo-placeholder {
-            background-color: #e2e8f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #a1a1aa;
+        .life-photo:hover {
+            transform: scale(1.05);
         }
-        /* 針對行動裝置微調 */
         @media (max-width: 640px) {
             .hero-h1 {
                 white-space: normal !important;
@@ -60,10 +56,10 @@
 <body class="text-gray-800 leading-normal overflow-x-hidden">
 
     <!-- 頂部海報區 -->
-    <header class="hero-bg h-[380px] md:h-[450px] flex items-center justify-center text-center text-white px-4">
+    <header class="hero-bg h-[400px] md:h-[500px] flex items-center justify-center text-center text-white px-4">
         <div class="max-w-4xl w-full">
-            <div class="bg-red-600 text-white font-black py-3 px-8 rounded-full mb-6 inline-flex items-center urgent-tag text-lg md:text-2xl tracking-[0.2em] shadow-2xl border-2 border-white/30">
-                <i class="fas fa-exclamation-triangle mr-3"></i> 工地完工在即<br>休息區拆除倒數一個月 <i class="fas fa-exclamation-triangle ml-3"></i>
+            <div class="bg-red-600 text-white font-black py-3 px-8 rounded-full mb-6 inline-flex items-center urgent-tag text-lg md:text-2xl tracking-[0.1em] shadow-2xl border-2 border-white/30">
+                <i class="fas fa-exclamation-triangle mr-3"></i> 工地完工在即｜拆除倒數中 <i class="fas fa-exclamation-triangle ml-3"></i>
             </div>
             <h1 class="hero-h1 text-xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">雲林-求認養!!或徵求協助送養的愛媽<br>當工地完工，這群孩子還能去哪？</h1>
             <p class="text-lg md:text-2xl opacity-90 font-medium tracking-wide text-orange-200">工地貓貓的生存請求，認養聯絡資訊拉到最下</p>
@@ -107,7 +103,7 @@
                 請別讓牠們在這裡等死。
             </p>
             <p class="text-center text-gray-500 text-sm md:text-base px-2">
-                如果您願意認養、提供暫時中途，或者幫幫忙轉發，或是協助我送養，我都萬分感激。<br class="hidden md:block">
+                如果您願意認養、提供暫時中途，或願意協助轉發資訊，我們都萬分感激。<br class="hidden md:block">
                 <span class="text-orange-600 font-bold block mt-2 text-lg">能救一個是一個，拜託大家。</span>
             </p>
         </div>
@@ -116,41 +112,41 @@
     <!-- 貓咪展示區 -->
     <main class="max-w-6xl mx-auto px-4 pb-20">
         
-        <!-- 兩隻媽貓貓 -->
+        <!-- 辛苦的貓媽媽 -->
         <div class="mb-16">
             <div class="flex items-center mb-6 border-b-2 border-orange-100 pb-3">
                 <div class="bg-orange-500 text-white w-10 h-10 flex items-center justify-center rounded-xl mr-3 shadow-md">
                     <i class="fas fa-heart"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-slate-800">兩隻辛苦的媽貓貓</h2>
+                <h2 class="text-2xl font-bold text-slate-800">辛苦的貓媽媽</h2>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                    <div class="aspect-square sm:aspect-video md:h-80 relative overflow-hidden bg-gray-200">
-                        <img src="https://lh3.googleusercontent.com/d/1a3hQ3bvnBkv6rK1e87HP56HLly84Z8cQ" alt="貓媽媽 1" class="w-full h-full object-cover">
+                    <div class="aspect-video relative overflow-hidden bg-gray-200">
+                        <img src="https://lh3.googleusercontent.com/d/1unlCdYH-KF9h-hgoh7HoJTaO8Pb7qh9b" alt="貓媽媽 1" class="w-full h-full object-cover">
                         <span class="absolute top-4 left-4 bg-orange-600 text-white font-bold px-4 py-1 rounded-full text-xs shadow-lg">貓媽媽 1</span>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-xl mb-1 text-slate-800">溫柔媽咪</h3>
-                        <p class="text-gray-500 text-sm">【近期已消失好幾天】性格沉穩，一直在此默默守護孩子。</p>
+                        <p class="text-gray-500 text-sm italic">【消失兩個禮拜突然又出現!!】大概2~2.5歲，性格沉穩，曾在此默默守護孩子。</p>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-                    <div class="aspect-square sm:aspect-video md:h-80 relative overflow-hidden bg-gray-200">
+                    <div class="aspect-video relative overflow-hidden bg-gray-200">
                         <img src="https://lh3.googleusercontent.com/d/1BYd-eBZ5g11A18Q6qiA9wvZh25yxEa6K" alt="貓媽媽 2" class="w-full h-full object-cover">
                         <span class="absolute top-4 left-4 bg-blue-600 text-white font-bold px-4 py-1 rounded-full text-xs shadow-lg">貓媽媽 2</span>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-xl mb-1 text-slate-800">堅強媽咪</h3>
-                        <p class="text-gray-500 text-sm">【近期已消失好幾天】個性怕人，總是先把食物讓給小孩吃，這份母愛令人心疼。</p>
+                        <p class="text-gray-500 text-sm italic">【近期失蹤中】個性怕人，總是先把食物讓給小孩吃。</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- 在工地長大的孩子們 -->
+        <!-- 孩子們 -->
         <div class="mb-16">
             <div class="flex items-center mb-6 border-b-2 border-blue-100 pb-3">
                 <div class="bg-blue-500 text-white w-10 h-10 flex items-center justify-center rounded-xl mr-3 shadow-md">
@@ -159,133 +155,203 @@
                 <h2 class="text-2xl font-bold text-slate-800">在工地長大的孩子們</h2>
             </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
-                <!-- 孩子 1-8 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <!-- 孩子列表 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
                     <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/1fxWoXieUz2fbVXMaiM846zmjNY3BCZ9-" alt="孩子 1" class="w-full h-full object-cover">
+                        <img src="https://lh3.googleusercontent.com/d/1fxWoXieUz2fbVXMaiM846zmjNY3BCZ9-" alt="孩子 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
                     </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 1 男生</h3>
-                        <p class="text-xs text-gray-500 leading-tight">個性最討喜 會黏人喜歡跟人互動 不怕生</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/113xdFlGcWrIOIvE39EXyoenViAoB_b8Q" alt="孩子 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 2 男生</h3>
-                        <p class="text-xs text-gray-500 leading-tight">唯一的黑貓 不黏人 稍微怕人</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/138PIz8Eokmmd9fR5cpLjoMWUrR-PMm19" alt="孩子 3" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 3 男生</h3>
-                        <p class="text-xs text-gray-500 leading-tight">黏人 會跟人玩 不太怕人 個性討喜</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/1-cUjtpalEYAHwg_cGZtxmeVg0MmNMcQE" alt="孩子 4" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 4 女生</h3>
-                        <p class="text-xs text-gray-500 leading-tight">怕人 較少與人互動 個性較害羞</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/10tRg2Z9M_OKjbdO9ZLTZEbrSfQLUR13Y" alt="孩子 5" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 5 男生</h3>
-                        <p class="text-xs text-gray-500 leading-tight">較少出現 稍微怕人 也是個漂亮的橘貓</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/10vxH1hUbCnJaZhGkaog8XiE773T_S-rA" alt="孩子 6" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 6 應該是女生</h3>
-                        <p class="text-xs text-center text-gray-500 leading-tight">也是漂亮的橘貓 有時較少出現 喜歡跟人玩 可愛</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square overflow-hidden bg-gray-100">
-                        <img src="https://lh3.googleusercontent.com/d/1cumVyjvuMLAMprC29SdSJQLeQLA_mbHB" alt="孩子 7" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 7 女生</h3>
-                        <p class="text-xs text-center text-gray-500 leading-tight">比較怕人 害羞一點</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 text-center">
-                    <div class="aspect-square cat-photo-placeholder"><i class="fas fa-camera text-xl opacity-20"></i></div>
-                    <div class="p-3">
-                        <h3 class="font-bold text-center text-sm text-slate-700 mb-1">孩子 8</h3>
-                        <p class="text-xs text-center text-gray-500 leading-tight">已一段時間沒看到了</p>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 1 (公)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">最討喜、黏人不怕生</p>
                     </div>
                 </div>
 
-                <!-- 紀念位 -->
-                <div class="memorial-card rounded-2xl p-4 flex flex-col items-center justify-center text-center col-span-1 lg:col-span-1">
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
+                    <div class="aspect-square overflow-hidden bg-gray-100">
+                        <img src="https://lh3.googleusercontent.com/d/113xdFlGcWrIOIvE39EXyoenViAoB_b8Q" alt="孩子 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 2 (公)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">唯一黑貓、稍微怕人</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
+                    <div class="aspect-square overflow-hidden bg-gray-100">
+                        <img src="https://lh3.googleusercontent.com/d/138PIz8Eokmmd9fR5cpLjoMWUrR-PMm19" alt="孩子 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 3 (公)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">黏人愛玩、討喜可愛</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
+                    <div class="aspect-square overflow-hidden bg-gray-100">
+                        <img src="https://lh3.googleusercontent.com/d/1-cUjtpalEYAHwg_cGZtxmeVg0MmNMcQE" alt="孩子 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 4 (母)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">害羞安靜、不常互動</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
+                    <div class="aspect-square overflow-hidden bg-gray-100">
+                        <img src="https://lh3.googleusercontent.com/d/1UYDts_-Zgo0TTiNbMmy0e5PrAfe0eOpP" alt="孩子 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 5 (公)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">漂亮橘貓、稍微怕人</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
+                    <div class="aspect-square overflow-hidden bg-gray-100">
+                        <img src="https://lh3.googleusercontent.com/d/1mAPE91bgNw5uVJeUqPS98CWgtiQomDtc" alt="孩子 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 6 (母)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">活潑橘貓、喜歡跟人玩</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow border border-gray-100 group">
+                    <div class="aspect-square overflow-hidden bg-gray-100">
+                        <img src="https://lh3.googleusercontent.com/d/15sRrUbYXHE3sRQhOMChEjGtEeEHIT0k_" alt="孩子 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-bold text-sm text-slate-700">孩子 7 (母)</h3>
+                        <p class="text-[11px] text-gray-500 mt-1">比較害羞的貓女孩</p>
+                    </div>
+                </div>
+
+                <!-- 紀念 -->
+                <div class="memorial-card rounded-2xl p-4 flex flex-col items-center justify-center text-center">
                     <i class="fas fa-dove text-2xl text-slate-400 mb-2"></i>
-                    <h3 class="font-bold text-slate-600 text-sm mb-1">已回喵星當小天使了</h3>
-                    <p class="text-red-500 text-[11px] font-bold leading-tight">前陣子車禍離開了<br>這環境太危險</p>
+                    <h3 class="font-bold text-slate-600 text-sm">已去喵星...</h3>
+                    <p class="text-red-500 text-[11px] font-bold mt-1">不幸於車禍中離開<br>這環境太危險了</p>
                 </div>
             </div>
         </div>
 
-        <!-- 生活照區塊 -->
+        <!-- 生活紀錄 (分段格子調整) -->
         <div class="mb-10">
             <div class="flex flex-col md:flex-row md:items-center mb-6 border-b-2 border-emerald-100 pb-3">
                 <div class="flex items-center mb-1 md:mb-0">
                     <div class="bg-emerald-500 text-white w-10 h-10 flex items-center justify-center rounded-xl mr-3 shadow-md">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-slate-800">工地貓貓生活碎片</h2>
+                    <h2 class="text-2xl font-bold text-slate-800">工地生活碎片</h2>
                 </div>
-                <p class="md:ml-4 text-gray-400 text-sm">牠們平常生活的隨手紀錄</p>
-            </div>
-            
-            <div class="grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 mb-8">
-                <!-- 原有照片 -->
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/17-kVTUBoxD5AWxtJZhURzYE3djw_URRu" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1cBkH8LjUlZJdZHcKvghlgzbUR6qp8XXs" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1Jm-PjE4sYW-qLkTkbWolg3Ciq9k1_vNX" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1PBZL_nwTcOIXgy8aEeQKiiiNIrfWZUUT" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1-8v2NdTgaotUuB7SlDgfzEWSSag7Yp98" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/19UuFnB2NQmNWQs6iJaVx_KTJiieluvXx" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1M-hlZyB29teYFL_2KEpuah2Zobtt5qjk" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1ECijzFfgPRJXTWzeuF1cZHVGU5-ekaf-" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1afNiHY25BoCBOa-tOCbw0LSSu7D9GM1m" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1UHUeApJ5gKIbf84MID4aJ3d4MwFv1-rp" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1UD5oSfh8RFxOd9v7d8hQQHhVdg4B4WCc" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1zx1z4G2QqGBLzvez11z1a5O0ZQokC3hp" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1u0LxClimVuOIRPD9_frU_dmULbrDLMkz" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1BaAgGGKvfHlbOq0ichS1KZ63iyn-B5bd" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/19RFwxgbOABXcFMp9Zi0E2V8eVU2SJQBA" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1kIEMQiMjdWhybUF9jjti6yb5pBBUSg2Q" class="w-full h-full object-cover"></div>
-                <!-- 新加入的照片 -->
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1ic4J47um3C7sTTCtiLbQn0mopG-Xg0uW" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1gs5oXALtAiYLoCTWXVuMCpLBkpSma3Sr" class="w-full h-full object-cover"></div>
-                <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1tEtHmHwlIu1WociLiS7hcmrabqbARBFL" class="w-full h-full object-cover"></div>
             </div>
 
-            <!-- 看更多按鈕區塊 -->
+            <!-- 分段格子容器 -->
+            <div class="space-y-12 mb-8">
+                <!-- 0號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">0號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1unlCdYH-KF9h-hgoh7HoJTaO8Pb7qh9b" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1HgpF8kMKy0Ri0OOXAYa1RL2Xp6O3-l2H" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/14ikz7AHwBMWtfUfZqGpPjuaIJToC7R6i" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1a3hQ3bvnBkv6rK1e87HP56HLly84Z8cQ" class="w-full h-full object-cover"></div>
+                        <div class="life-photo">待上傳</div>
+                    </div>
+                </div>
+
+                <!-- 1號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">1號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1M-hlZyB29teYFL_2KEpuah2Zobtt5qjk" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/13oVtFhYas9wbflESOcGkYkku2oSRFZdQ" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1pMiZeAak2JwnyhLp3WXPVTdtEk116FoX" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1fxWoXieUz2fbVXMaiM846zmjNY3BCZ9-" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1lAE5BA43C89KBkSGuwktaXSe8LRP79J8" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+
+                <!-- 2號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">2號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1VUOWgGzCP8M4PG1lCrGXy-QhsXe37iRH" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1T-fYEH6zBgq_M4tnUDlZFmFmfdQkrF-6" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/113xdFlGcWrIOIvE39EXyoenViAoB_b8Q" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/19WyyXBRr4zWQ2HjsL6K5D780OB35acrt" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/11GyVpnVIyG2_xneXqhR2VFqgDaT-1J5r" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+
+                <!-- 3號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">3號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1YvmbQDxu2_idK45rw0tQYMCelw9-TkPg" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1Jm-PjE4sYW-qLkTkbWolg3Ciq9k1_vNX" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1cBkH8LjUlZJdZHcKvghlgzbUR6qp8XXs" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1VL3ftPy7tGWMk8GE-wyVsPOyci9gLL-b" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1DSAKW2_gPXKf2MJllgdhqOct3eQsIPS1" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+
+                <!-- 4號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">4號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/19rPrZnlMbMZGsteo6YZY25zA9VGj7cM4" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1dGYMx8ekFpjjXgytzA4avUwZDrrZT1TV" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1MAf2VYhDgj_x4KSaP_-4MgMsapJLha0s" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1n8-Woc2SyHnPhDjN7UqnqexAAvbpmcCY" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1Qc4-4fl5fUwvFaOZXJuOx9ta8eZCusxA" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+
+                <!-- 5號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">5號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1UYDts_-Zgo0TTiNbMmy0e5PrAfe0eOpP" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1N7TvEgZL3slPzwEGSahiR9FujsnH5ILm" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1-h6obUh0R6FlyjMS6eIJ6u3FzlBsHMh9" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1NL2NUDBhe4cZ6RnepSGhposuET1fAeG0" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1jN9lp6A5Uhuxy4DweL2x0xKgTcd4esmj" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+
+                <!-- 6號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">6號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1mAPE91bgNw5uVJeUqPS98CWgtiQomDtc" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/14U5RYT6rk9k0y7A_CQSN7oYtWdRATiJR" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1zm8Ge-B0rdVtB5aqzaojLICLJgt0ZdTG" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/161mmkZPEM8KQcD_m6BtRzSdPquNlxswP" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1AHhHe7R8PCTDwwW-GfyH8w0ndjA8MKOb" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+
+                <!-- 7號分段 -->
+                <div>
+                    <h3 class="text-lg font-bold text-emerald-700 mb-4 flex items-center"><span class="bg-emerald-100 px-3 py-1 rounded-lg mr-2">7號</span> 生活紀錄</h3>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/15sRrUbYXHE3sRQhOMChEjGtEeEHIT0k_" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1bMFD3CyZZjSfy6jFyWzhM5nzQhE06Hql" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1JPjXuhpiic1_HAJBNlRZHhtUxcyEJYIu" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1PxwvsDVmNM4l-ONsRykjL4HRs2d0V_T6" class="w-full h-full object-cover"></div>
+                        <div class="life-photo"><img src="https://lh3.googleusercontent.com/d/1cumVyjvuMLAMprC29SdSJQLeQLA_mbHB" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="bg-emerald-50 rounded-3xl p-6 border border-emerald-100 text-center">
                 <a href="https://drive.google.com/drive/folders/1G_7GrJFRbtisj9WrD72radU5faQmo5NA?usp=sharing" target="_blank" class="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform active:scale-95 mb-4">
-                    <i class="fab fa-google-drive mr-2 text-xl"></i>
-                    點此看更多照片與影片
+                    <i class="fab fa-google-drive mr-2 text-xl"></i> 點此看更多照片與影片
                 </a>
-                <p class="text-emerald-800 font-bold flex items-center justify-center">
-                    <i class="fas fa-info-circle mr-2"></i>
-                    有些是幾個月前的照片，現在長比較大了
+                <p class="text-emerald-800 text-sm font-bold flex items-center justify-center">
+                    <i class="fas fa-info-circle mr-2"></i> 記錄中包含幾個月前的照片，孩子們現在已經長大了
                 </p>
             </div>
         </div>
@@ -294,65 +360,52 @@
     <!-- 底部聯絡區 -->
     <section class="bg-slate-900 text-white py-16 px-5 text-center">
         <div class="max-w-4xl mx-auto text-left">
-            <h2 class="text-base md:text-3xl font-bold mb-10 leading-relaxed italic text-orange-200 text-center px-2">「我想活下去，能不能給我一個溫暖的家？」</h2>
+            <h2 class="text-xl md:text-3xl font-bold mb-10 leading-relaxed italic text-orange-200 text-center px-2">「我想活下去，能不能給我一個溫暖的家？」</h2>
             
-            <div class="bg-white/5 p-6 md:p-10 rounded-3xl border border-white/5 mb-12">
+            <div class="bg-white/5 p-6 md:p-10 rounded-3xl border border-white/10 mb-12">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- 左側資訊與條件 -->
+                    <!-- 左側資訊 -->
                     <div>
-                        <div class="space-y-4 mb-8 text-gray-400 text-sm md:text-base">
+                        <div class="space-y-4 mb-8 text-gray-400">
                             <p class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-4 text-orange-500"></i> <span><b>地點：</b>雲林縣斗六市</span></p>
-                            <p class="flex items-start"><i class="fas fa-heart mt-1 mr-4 text-orange-500"></i> <span><b>需求：</b>認養、短期中途、轉發、協助我送養</span></p>
-                            <p class="flex items-start"><i class="fas fa-check-circle mt-1 mr-4 text-orange-500"></i> <span><b>備註：</b>不須任何費用，僅求真心對待</span></p>
+                            <p class="flex items-start"><i class="fas fa-heart mt-1 mr-4 text-orange-500"></i> <span><b>需求：</b>認養、中途、協助送養</span></p>
+                            <p class="flex items-start"><i class="fas fa-check-circle mt-1 mr-4 text-orange-500"></i> <span><b>備註：</b>無須費用，僅求真心對待</span></p>
                         </div>
                         
                         <div class="pt-6 border-t border-white/10">
                             <p class="text-orange-400 font-bold mb-4 flex items-center">
                                 <i class="fas fa-file-alt mr-2"></i> 認養條件
                             </p>
-                            <div class="bg-black/30 p-6 rounded-xl text-sm md:text-base leading-relaxed text-gray-300">
+                            <div class="bg-black/30 p-6 rounded-xl text-sm leading-relaxed text-gray-300">
                                 <ul class="list-disc pl-5 space-y-2">
-                                    <li>領養貓咪是重大的決定，請慎重思考</li>
-                                    <li>照顧貓咪是一輩子的事，請慎重思考</li>
-                                    <li>請別一時興起，慎重思考自己準備好了</li>
-                                    <li>需年滿 20 歲，有穩定經濟來源</li>
-                                    <li>需配合後續追蹤</li>
-                                    <li>全家同意認養並了解養貓相關責任</li>
-                                    <li>不籠養、不放養，需做好居家防護</li>
-                                    <li>請自備籠子</li>
+                                    <li>領養是一輩子的決定，請慎重思考。</li>
+                                    <li>需年滿 20 歲，有穩定經濟來源。</li>
+                                    <li>需全家同意認養，並做好居家防護。</li>
+                                    <li>不籠養、不放養，需配合後續追蹤。</li>
+                                    <li>接貓時請自備籠子。</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 右側表單區 -->
-                    <div class="flex flex-col justify-center items-center md:items-start space-y-6 md:pl-10 md:border-l md:border-white/10">
-                        <div class="text-center md:text-left">
-                            <p class="text-white font-bold text-xl mb-2">領養流程213</p>
-                            <p class="text-white font-bold text-xl mb-2">先看2.認養切結書 如同意內容</br> 再行填寫問卷或加賴</p>
-                            <p class="text-gray-400 text-sm mb-6">填寫後 我會儘快與您聯繫溝通</p>
+                    <!-- 右側聯絡流程 -->
+                    <div class="flex flex-col justify-center space-y-6">
+                        <div class="bg-orange-600/10 border border-orange-500/30 p-6 md:p-8 rounded-2xl text-center md:text-left shadow-2xl">
+                            <p class="text-orange-400 font-bold mb-4 text-lg">
+                                <i class="fas fa-user-check mr-2"></i> 聯繫認養審核人
+                            </p>
+                            <h3 class="text-white text-3xl font-bold mb-4">鄭鯉敏 </h3>
+                            <p class="text-gray-300 text-base mb-8 leading-relaxed">
+                                送養全權委託鄭小姐全權幫忙審核認養，若您有意願認養，請至臉書搜尋並私訊聯繫。
+                            </p>
+                            
+                            <a href="https://www.facebook.com/search/top?q=%E9%84%AD%E9%AF%89%E6%95%8F" target="_blank" class="inline-flex w-full items-center justify-center bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold py-5 px-8 rounded-2xl shadow-lg transition-all transform active:scale-95 group">
+                                <i class="fab fa-facebook mr-3 text-3xl group-hover:scale-110 transition-transform"></i> 
+                                <span class="text-lg">臉書搜尋 鄭鯉敏</span>
+                            </a>
                         </div>
                         
-                        <!-- 流程 1 -->
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1LJVFjirQTmnoxlGZgdMf2eH3vRfvCJAbTFTXnUjKX-WFCA/viewform?usp=publish-editor" target="_blank" class="w-full flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-8 rounded-2xl shadow-lg transition-all transform active:scale-95 group">
-                            <i class="fas fa-edit mr-3 text-xl group-hover:rotate-12 transition-transform"></i>
-                            １．立即填寫認養問卷
-                        </a>
-                        
-                        <!-- 流程 2 -->
-                        <a href="https://docs.google.com/document/d/16OhxPRHK2-XoGureLGXTeM7QEIKSKhse/edit" target="_blank" class="w-full flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-4 px-8 rounded-2xl shadow-md transition-all transform active:scale-95 group border border-white/10">
-                            <i class="fas fa-file-download mr-3 text-lg"></i>
-                            ２．認養切結書
-                        </a>
-
-                        <!-- 流程 3 -->
-                        <a href="https://lin.ee/Lu3T7Fh" target="_blank" class="w-full flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-2xl shadow-lg transition-all transform active:scale-95 group">
-                            <i class="fas fa-paw mr-3 text-lg group-hover:rotate-12 transition-transform"></i>
-                            ３．點我加入Line聯繫 @606ocrjw
-                        </a>
-                        
-                        <!-- 溫馨結尾 -->
-                        <div class="bg-white/5 rounded-2xl p-4 w-full text-center">
+                        <div class="bg-white/5 rounded-2xl p-4 text-center">
                             <p class="text-xs text-gray-500 italic">感謝您的愛心與對生命的重視</p>
                         </div>
                     </div>
@@ -362,37 +415,8 @@
     </section>
 
     <footer class="text-center py-8 text-gray-500 text-[11px] bg-slate-950 px-4">
-        &copy; 2026 工地貓貓尋家行動 · 願每個生命都能被溫柔對待<br>
+        &copy; 2026 工地貓貓尋家行動 · 願每個生命都能被溫柔對待
     </footer>
 
-    <script>
-        function copyToClipboard(text) {
-            const el = document.createElement('textarea');
-            el.value = text;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
-            // 改良提示方式，避免在 iframe 內被擋
-            const msg = document.createElement('div');
-            msg.innerText = '資訊已複製！';
-            msg.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.8); color:white; padding:20px; border-radius:10px; z-index:10000; font-weight:bold;';
-            document.body.appendChild(msg);
-            setTimeout(() => document.body.removeChild(msg), 3000);
-        }
-    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
